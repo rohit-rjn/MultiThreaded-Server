@@ -1,0 +1,6 @@
+for file in *.c
+do
+	OFILE=$(basename $file .c)
+	#echo $OFILE
+	gcc $file -pthread
+done
